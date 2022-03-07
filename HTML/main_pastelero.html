@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelito Feliz</title>
+</head>
+<body>
+    <img src="./assets/logo_small.png" alt="logo_small" width="250px" height="78px">
+    <h1>Inventario</h1>
+    <h2>Bases de pan</h2>
+    <label for="pan">Sabor:</label>
+    <select name="pan" id="pan">
+        <option value="Chocolate">Chocolate</option>
+        <option value="Fresa">Fresa</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="3 Leches">3 Leches</option>
+        <option value="Red Velvet">Red Velvet</option>
+        <option value="Limon">Limon</option>
+        <option value="Mil hojas">Mil hojas</option>
+        <option value="Zanahoria">Zanahoria</option>
+        <option value="Platano">Platano</option>
+        <option value="Napolitano">Napolitano</option>
+        <option value="Galleta con chispas">Galleta con chispas</option>
+        <option value="Naranja">Naranja</option>
+    </select>
+    <label for="pan">-quedan x unidades</label>
+    <h2>Cubiertas</h2>
+    <label for="cub">Tipo:</label>
+    <select name="cub" id="cub">
+        <option value="Crema de mantequilla">Crema de mantequilla</option>
+        <option value="Crema batida">Crema batida</option>
+        <option value="Ganache de chocolate">Ganache de chocolate</option>
+        <option value="Fondant">Fondant</option>
+    </select>
+    <label for="cub">-quedan x unidades</label>
+    <h2>Decoraciones</h2>
+    <label for="dec">Sabor:</label>
+    <select name="dec" id="dec">
+        <option value="Chispas de chocolate">Chispas de chocolate</option>
+        <option value="Fruta de temporada">Fruta de temporada</option>
+        <option value="Nuez">NUez</option>
+        <option value="Chocolate liquido">Chocolate liquido</option>
+        <option value="Fresas">Fresas</option>
+        <option value="Cajeta">Cajeta</option>
+        <option value="Galletas Oreo">Galletas Oreo</option>
+        <option value="Chocolates Ferrero">Chocolates Ferrero</option>
+        <option value="Cerezas">Cerezas</option>
+        <option value="Chocolate blanco">Chocolate blanco</option>
+        <option value="Crema batida">Crema batida</option>
+    </select>
+    <label for="dec">-quedan x unidades</label>
+    <hr>
+    <h1>Pedidos</h1>
+    <label for="pedido">Pedido No.:</label>
+    <select name="pedido" id="pedido">
+        <option value="01022203">01022203</option>
+        <option value="02022201">02022201</option>
+        <option value="02022202">02022202</option>
+        <option value="03022201">03022201</option>
+    </select>
+    <table>
+        <tr>
+            <th>Pedido</th>
+            <th>Datos</th>
+            <th>Estatus</th>
+            <th>Detalles</th>
+            <th>Notas del cliente</th>
+        </tr>
+        <tr>
+            <td>01022203</td>
+            <td>Juan Perez<br>5566666666<br>juanperez123@gmail.com</td>
+            <td>En preparacion</td>
+            <td>Base: Vainilla<br>Cubierta: Ganache<br>Decoracion: Cerezas</td>
+            <td>Ninguna</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Actualizar estatus del pedido</h3>
+    <input type="radio" name="estatus" id="recibido" value="recibido">
+    <label for="recibido">Recibido</label>
+    <input type="radio" name="estatus" id="aceptado" value="aceptado">
+    <label for="aceptado">Aceptado</label>
+    <input type="radio" name="estatus" id="preparacion" value="preparacion">
+    <label for="preparacion">En preparacion</label>
+    <input type="radio" name="estatus" id="enviado" value="enviado">
+    <label for="enviado">Enviado</label>
+    <input type="radio" name="estatus" id="pagado" value="pagado">
+    <label for="pagado">Pagado</label>
+    <br><br>
+    <input type="button" value="Actualizar">
+</body>
+</html>

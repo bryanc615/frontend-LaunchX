@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Pedido</title>
+</head>
+<body>
+    <a href="./main_cliente.html"><img src="./assets/logo_small.png" alt="logo_small" width="250px" height="78px"></a>
+    <h1>Nuevo pedido</h1>
+    <h2>Datos del cliente</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="10"><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo"><br>
+        <h2>Personaliza tu pedido</h2>
+        <h3>Sabor del pan (para combinar 2 sabores marcar los 2 pero solo aumentar la cantidad del primero y dejar en 0 el otro)</h3>
+        <input type="checkbox" name="pan1" id="pan1">
+        <label for="pan1">Chocolate</label>&nbsp;&nbsp;
+        <label for="cpan1">Cant.:</label>
+        <input type="number" name="cpan1" id="cpan1" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan2" id="pan2">
+        <label for="pan2">Fresa</label>&nbsp;&nbsp;
+        <label for="cpan2">Cant.:</label>
+        <input type="number" name="cpan2" id="cpan2" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan3" id="pan3">
+        <label for="pan3">Vainilla</label>&nbsp;&nbsp;
+        <label for="cpan3">Cant.:</label>
+        <input type="number" name="cpan3" id="cpan3" min="0" value="0"><br>
+        <input type="checkbox" name="pan4" id="pan4">
+        <label for="pan4">3 leches</label>&nbsp;&nbsp;
+        <label for="cpan4">Cant.:</label>
+        <input type="number" name="cpan4" id="cpan4" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan5" id="pan5">
+        <label for="pan5">Red Velvet</label>&nbsp;&nbsp;
+        <label for="cpan5">Cant.:</label>
+        <input type="number" name="cpan5" id="cpan5" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan6" id="pan6">
+        <label for="pan6">Limon</label>&nbsp;&nbsp;
+        <label for="cpan6">Cant.:</label>
+        <input type="number" name="cpan6" id="cpan6" min="0" value="0"><br>
+        <input type="checkbox" name="pan7" id="pan7">
+        <label for="pan7">Mil hojas</label>&nbsp;&nbsp;
+        <label for="cpan7">Cant.:</label>
+        <input type="number" name="cpan7" id="cpan7" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan8" id="pan8">
+        <label for="pan8">Zanahoria</label>&nbsp;&nbsp;
+        <label for="cpan8">Cant.:</label>
+        <input type="number" name="cpan8" id="cpan8" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan9" id="pan9">
+        <label for="pan9">Platano</label>&nbsp;&nbsp;
+        <label for="cpan9">Cant.:</label>
+        <input type="number" name="cpan9" id="cpan9" min="0" value="0"><br>
+        <input type="checkbox" name="pan10" id="pan10">
+        <label for="pan10">Napolitano</label>&nbsp;&nbsp;
+        <label for="cpan10">Cant.:</label>
+        <input type="number" name="cpan10" id="cpan10" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan11" id="pan11">
+        <label for="pan11">Galleta con chispas</label>&nbsp;&nbsp;
+        <label for="cpan11">Cant.:</label>
+        <input type="number" name="cpan11" id="cpan11" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="pan12" id="pan12">
+        <label for="pan12">Naranja</label>&nbsp;&nbsp;
+        <label for="cpan12">Cant.:</label>
+        <input type="number" name="cpan12" id="cpan12" min="0" value="0">
+        <br><br>
+        <h3>Tipo de cubierta (para combinar 2 tipos marcar los 2 pero solo aumentar la cantidad del primero y dejar en 0 el otro)</h3>
+        <input type="checkbox" name="cub1" id="cub1">
+        <label for="cub1">Crema de mantequilla</label>&nbsp;&nbsp;
+        <label for="ccub1">Cant.:</label>
+        <input type="number" name="ccub1" id="ccub1" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="cub2" id="cub2">
+        <label for="cub2">Crema batida</label>&nbsp;&nbsp;
+        <label for="ccub2">Cant.:</label>
+        <input type="number" name="ccub2" id="ccub2" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="cub3" id="cub3">
+        <label for="cub3">Ganache de chocolate</label>&nbsp;&nbsp;
+        <label for="ccub3">Cant.:</label>
+        <input type="number" name="ccub3" id="ccub3" min="0" value="0"><br>
+        <input type="checkbox" name="cub4" id="cub4">
+        <label for="cub4">Fondant</label>&nbsp;&nbsp;
+        <label for="ccub4">Cant.:</label>
+        <input type="number" name="ccub4" id="ccub4" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <h3>Tipo de decoracion (para combinar 2 decoraciones marcar las 2 pero solo aumentar la cantidad de la primera y dejar en 0 la otra)</h3>
+        <input type="checkbox" name="dec1" id="dec1">
+        <label for="dec1">Chispas de chocolate</label>&nbsp;&nbsp;
+        <label for="cdec1">Cant.:</label>
+        <input type="number" name="cdec1" id="cdec1" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="dec2" id="pdec2">
+        <label for="dec2">Fruta de temporada</label>&nbsp;&nbsp;
+        <label for="cdec2">Cant.:</label>
+        <input type="number" name="cdec2" id="cdec2" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="dec3" id="dec3">
+        <label for="dec3">Nuez</label>&nbsp;&nbsp;
+        <label for="cdec3">Cant.:</label>
+        <input type="number" name="cdec3" id="cdec3" min="0" value="0"><br>
+        <input type="checkbox" name="dec4" id="dec4">
+        <label for="dec4">Chocolate liquido</label>&nbsp;&nbsp;
+        <label for="cdec4">Cant.:</label>
+        <input type="number" name="cdec4" id="cdec4" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="dec5" id="dec5">
+        <label for="dec5">Fresas</label>&nbsp;&nbsp;
+        <label for="cdec5">Cant.:</label>
+        <input type="number" name="cdec5" id="cdec5" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="dec6" id="dec6">
+        <label for="dec6">Cajeta</label>&nbsp;&nbsp;
+        <label for="cdec6">Cant.:</label>
+        <input type="number" name="cdec6" id="cdec6" min="0" value="0"><br>
+        <input type="checkbox" name="dec7" id="dec7">
+        <label for="dec7">Galleta Oreo</label>&nbsp;&nbsp;
+        <label for="cdec7">Cant.:</label>
+        <input type="number" name="cdec7" id="cdec7" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="dec8" id="dec8">
+        <label for="dec8">Chocolate Ferrero</label>&nbsp;&nbsp;
+        <label for="cdec8">Cant.:</label>
+        <input type="number" name="cdec8" id="cdec8" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="dec9" id="dec9">
+        <label for="dec9">Cerezas</label>&nbsp;&nbsp;
+        <label for="cdec9">Cant.:</label>
+        <input type="number" name="cdec9" id="cdec9" min="0" value="0"><br>
+        <input type="checkbox" name="dec10" id="dec10">
+        <label for="dec10">Chocolate blanco</label>&nbsp;&nbsp;
+        <label for="cdec10">Cant.:</label>
+        <input type="number" name="cdec10" id="cdec10" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="dec11" id="dec11">
+        <label for="dec11">Diseño de crema batida</label>&nbsp;&nbsp;
+        <label for="cdec11">Cant.:</label>
+        <input type="number" name="cdec11" id="cdec11" min="0" value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br><br>
+        <label for="descripcion">Notas sobre el pastel (Especificaciones, diseño personalizado, color de cubierta, etc):</label>
+        <input type="text" id="descripcion" name="descripcion"><br><br>
+        <input type="submit" value="Hacer pedido">
+        <input type="reset" value="Restablecer">
+        <a href="./main_cliente.html"><input type="button" value="Cancelar y regresar"></a>
+    </form>
+    <br><br>
+    <hr>
+    <footer><p>Dirección: Calle 32, No. 15, Col. Xxx, CP. 55555, CDMX.</p>
+    <p>Teléfono: 555555555</p>
+    <p>Horarios de atención: Lunes a Domingo de 9:00 am. a 9:00 pm.</p>
+    </footer>
+</body>
+</html>
